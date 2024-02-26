@@ -49,7 +49,7 @@ export default function Slider({url, limit, page}){
 
     return(
         <div className="container">
-            <BsArrowLeftCircleFill onClikc={handlePrevious} className="arrow arrow-left"/>
+            <BsArrowLeftCircleFill onClick={handlePrevious} className="arrow arrow-left"/>
             {
                 images && images.length ?
                 images.map((imageItem, index) => (

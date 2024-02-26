@@ -16,12 +16,16 @@ export default function Accordion() {
         if (multipleSelected.includes(getCurrentId)) {
             const filteredArray = multipleSelected.filter(item => item !== getCurrentId);
             setMultipleSelected(filteredArray);
-        }       
+        }
     }
 
     return (
         <div className="wrapper">
-            <button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>
+            <button onClick={() => {
+                setEnableMultiSelection(!enableMultiSelection)
+                setSelected(null);
+                setMultipleSelected([]);
+                }}>
                 {enableMultiSelection ? 'Disable Multi Selection' : 'Enable Multi Selection'}
             </button>
             <div className="accordion">

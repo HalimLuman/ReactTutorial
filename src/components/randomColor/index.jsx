@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import data from '../accordion/data';
 
 export default function RandomColor(){
     const [hex, setHex] = useState(true);
@@ -19,7 +20,7 @@ export default function RandomColor(){
     function handleHex(){
         setHex(true);
 
-        let  r = Math.floor(Math.random() * 256);
+        let r = Math.floor(Math.random() * 256);
         let g = Math.floor(Math.random() * 256);
         let b = Math.floor(Math.random() * 256);
 

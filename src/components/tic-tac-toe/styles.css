@@ -1,0 +1,45 @@
+.general-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.tic-tac-toe-container::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+.tic-tac-toe-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.tic-tac-toe-container div{
+    display: flex;
+    flex-direction: column;
+}
+
+.square{
+    border: 1px solid red;
+    float: left;
+    font-size: 40px;
+    height: 100px;
+    padding: 0px;
+    margin-right: -1px;
+    margin-top: -1px;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+.control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.restart-btn{
+    width: 100px;
+    padding: 0.25rem 1.25rem;
+    margin: 1rem auto;
+    cursor: pointer;
+}

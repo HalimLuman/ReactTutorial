@@ -14,6 +14,13 @@ import TabTest from './components/custom-tabs/tab-test';
 import ModalTest from './components/modal-popup/modal-test';
 import GithubFinder from './components/githubFinder';
 import SearchAutocomplete from './components/search-autocomplete';
+import TicTacToe from './components/tic-tac-toe';
+import FeatureFlagGlobalState from './components/feature_flags/context';
+import FeatureFlags from './components/feature_flags/main';
+import UseFecthHookTest from './components/custom_hook/test';
+import UseOnClickOutsideTest from './components/use-outside-click/test';
+import UseWindowResizeTest from './components/use-window-resize/test';
+import ScrollTopAndBottom from './components/scroll-to-top-and-bottom';
 
 function App() {
   return (
@@ -30,7 +37,15 @@ function App() {
      {/* <TabTest /> */}
      {/* <ModalTest /> */}
      {/* <GithubFinder /> */}
-     <SearchAutocomplete />
+     {/* <SearchAutocomplete /> */}
+     <TicTacToe />
+     {/* <FeatureFlagGlobalState>
+      <FeatureFlags />
+     </FeatureFlagGlobalState> */}
+     {/* <UseFecthHookTest /> */}
+     {/* <UseOnClickOutsideTest /> */}
+     {/* <UseWindowResizeTest /> */}
+     {/* <ScrollTopAndBottom /> */}
     </div>
 
   );
